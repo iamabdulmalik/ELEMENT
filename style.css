@@ -1,0 +1,135 @@
+*
+{
+    margin: 0 ;
+    padding: 0;
+}
+body
+{
+    background-color: black;
+}
+p
+{
+    background-color: whitesmoke;
+    text-align: center;
+}  
+h1
+{
+    background-color: whitesmoke;
+    text-align: center;
+}
+h2
+{
+    text-align: center;
+    background-color: blue;
+    font-size: 1.9rem;
+    
+}
+h3
+{
+    color: white;
+    text-align: center;
+}
+h4
+{
+    color: white;
+    text-align: center;
+}
+
+input 
+{
+    height: 5vh;
+    width: 50vh;
+    display: flex;
+
+
+}
+input 
+{
+    background-color:  black;
+    border-radius: 14px;
+    color: red;
+}
+.submit
+{
+    width: 20vh;
+    color: red;
+    margin-left: 100px;
+    background-color: black;
+}
+.submit:hover
+{
+    background-color: green;
+}
+span
+{
+    color: red;
+}
+.container{
+    overflow: hidden;
+}
+.container .text{
+    position: relative;
+    color: white;
+    font-size:15px;
+    font-weight: 700;
+}
+.container .text.first-text{
+    color: blue;
+}
+.text.sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:  black;
+    border-left: 2px solid black;
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    height: 50PX;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li{
+    font-size: 1.1rem;
+}
+.navbar ul li a{
+    padding: 5px 20px;
+    text-decoration: none;
+    color: blue;
+}
+.navbar ul li a:hover{
+    color: #00f953;
+    transition: .4s;
+}
+p
+{
+    background-color: black;
+    color:white;
+}
